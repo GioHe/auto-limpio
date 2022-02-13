@@ -1,0 +1,23 @@
+{
+  "name": "auto-limpio",
+  "version": "1.0.0",
+  "description": "Desafio Auto Limpio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GioHe/auto-limpio.git"
+  },
+  "author": "Sebastián Candia - Giovanna Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GioHe/auto-limpio/issues"
+  },
+  "homepage": "https://github.com/GioHe/auto-limpio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
