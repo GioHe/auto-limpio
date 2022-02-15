@@ -11,6 +11,9 @@
   <link href="estilo.css" rel="stylesheet" />
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -109,99 +112,242 @@
   </div>
   <!--Fin de carrusel de imágenes-->
 
+  <!--Formulario-->
+  <section class="reserva-hora">
+    <div class="container">
+      <div class="col-md-9 col-sm-9 col-xs-12">
+        <div class="formulario">
+          <!--Divisor para datos del auto-->
+          <div class="divisor">
+            <h2>RESERVA TU HORA</h2>
+            <hr class="text-black" />
+          </div>
+          <h3>DATOS PERSONALES</h3>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">Rut</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="12345678-9" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">Comuna</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Elegir</option>
+                <option>Temuco</option>
+                <option>Padre Las Casas</option>
+                <option>Freire</option>
+                <option>Lautaro</option>
+                <option>Vilcún</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione su comuna
+              </div>
+            </div>
 
+            <!--Divisor para datos del auto-->
+            <div class="divisor">
+              <h3>DATOS DEL VEHÍCULO</h3>
+              <hr class="text-black" />
+            </div>
 
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">Tipo de Vehículo</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Elegir</option>
+                <option>Furgón</option>
+                <option>Automóvil</option>
+                <option>Camión</option>
+                <option>Camioneta</option>
+                <option>Moto</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione su tipo de vehículo
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Marca</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Modelo</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Año</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <b></b>
 
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Revisión técnica al día:</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Si
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
 
+            <div class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Que servicio desea:</legend>
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">Lavado exterior $7000</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">Lavado motor $5000</label>
+                </div>
+              </div>
+            </div>
 
+            <!--Divisor para elegir la fecha-->
+            <div class="divisor">
+              <h3>¿CUANDO NOS VEMOS?</h3>
+              <hr class="text-black" />
+            </div>
 
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">Escoge quién te atenderá:</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Elegir</option>
+                <option>Juan Pérez</option>
+                <option>Ricardo Ortega</option>
+                <option>Jaime Grandón</option>
+                <option>Roberto Castro</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione su tipo de vehículo
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Fecha deseada</label>
+              <input type="date" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Hora deseada</label>
+              <input type="time" class="form-control" id="validationTooltip02" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
 
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Déjanos tu comentario</label>
+            </div>
 
-
-
-
-  <!-- Rut y Digito Verificador
-  <div>
-    <div>
-      <input type="number" class="form-control" id="Rut" placeholder="12345678">
-    </div>-
-    <div>
-      <input type="text" id="dv" name="dv" placeholder="k" required="required" minlength="1" maxlength="1"
-        pattern="[0-9kK]{1}" />
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Nombre y Apellido
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+  <footer class="bg-dark pt-3 pb-3">
+    <div class="row">
+      <div class="col-4">
+        <div class="p-2 ps-5">
+          <h3 class="text-white">Auto Limpio</h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ratione nulla aperiam possimus. Qui
+            obcaecati provident non omnis numquam deleniti laboriosam neque ad voluptatem in reprehenderit quasi,
+            fugit minima praesentium?
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="p-2 text center">
+          <h3 class="text white">Menú</h3>
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Servicios</a>
+            </li>
+            <li>
+              <a href="#">Sucursales</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="p-2">
+          <h3 class="text-white">Sucursales</h3>
+          <p class="text-white">
+            Los Castaños 321, Temuco<br />
+            Tel: 56 2 1111 2222 <br />
+          </p>
+          <hr class="text-white" />
+          <!--Divisor-->
+          <p class="text-white">
+            Rosales 456, Lautaro.<br />
+            Tel: 56 2 3333 4444 <br />
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-    </div>
-  </div>
-  <!--Dirección-->
-  <!-- <div class="col-4">
-    <label for="inputAddress" class="form-label">Dirección</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Manuel Rodríguez 123">
-  </div> -->
-  <!--Comuna-->
-  <!-- <select class="form-select" aria-label="Default select example">
-    <option selected>Elija su comuna...</option>
-    <option value="1">Comuna 1</option>
-    <option value="2">Comuna 2</option>
-    <option value="3">Comuna 3</option>
-    <option value="4">Comuna 4</option>
-    <option value="5">Comuna 5</option>
-  </select>
-  <!--Tipo de vehículo-->
-  <!-- <select class="form-select" aria-label="Default select example">
-    <option selected>Elija su vehículo...</option>
-    <option value="1">Furgón</option>
-    <option value="2">Automóvil</option>
-    <option value="3">Camión</option>
-    <option value="4">Camioneta</option>
-    <option value="5">Moto</option>
-  </select> -->
-
-  <!--Revisión Técnica-->
-  <!-- <a>¿Revisión Técnica al día?</a>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-check-label" for="flexRadioDefault1">
-      Si
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-check-label" for="flexRadioDefault2"> -->
-
-  <!-- </label>
-  </div>
-  <!--Tipos de servicios de Lavado-->
-  <!-- <a>Seleccione sus servicios:</a>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    <label class="form-check-label" for="flexCheckDefault">
-      Lavado exterior con un valor de $7000.
-    </label> -->
-  <!-- </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-    <label class="form-check-label" for="flexCheckChecked">
-      Lavado de motor con un valor de $5000.
-    </label>
-  </div>  -->
-
+  </footer>
 
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
