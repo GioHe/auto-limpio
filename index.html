@@ -123,12 +123,24 @@
             <hr class="text-black" />
           </div>
           <h3>DATOS PERSONALES</h3>
-          <form class="row g-3 needs-validation" novalidate>
+
+          <form method="get" class="row g-3 needs-validation" novalidate>
             <div class="col-md-4 position-relative">
               <label for="validationTooltip01" class="form-label">Rut</label>
-              <input type="text" class="form-control" id="validationTooltip01" value="12345678-9" required>
+              <input type="number" class="form-control" id="rut" value="" required>
               <div class="valid-tooltip">
                 Looks good!
+              </div>
+              <div id="feedback-rut" class=""></div>
+            </div>
+
+            <div class="col-sm-2 position-relative">
+              <label for="validationTooltip01" class="form-label">Dígito</label>
+              <input type="text" class="form-control" id="digito" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+              <div id="feedback-digito" class="">
               </div>
             </div>
 
@@ -141,6 +153,7 @@
               <div id="feedback-nombre" class="">
               </div>
             </div>
+
             <div class="col-md-4 position-relative">
               <label for="validationTooltip02" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="apellido" value="" required>
@@ -314,7 +327,7 @@
             </div>
 
             <div class="col-12">
-              <button class="btn btn-primary" id="btnCalcular" type="button">Enviar</button>
+              <button class="btn btn-primary" id="btnCalcular" type="button" >Enviar</button>
             </div>
           </form>
         </div>
